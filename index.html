@@ -15,19 +15,12 @@
       <div class="container header-container">
         <div class="logo">СЛОН</div>
         <nav>
-          <ul>
-            <li><a href="#home">Главная</a></li>
-            <li><a href="#services">Услуги</a></li>
-            <li><a href="#managers">Менеджеры</a></li>
-            <li><a href="#vacancies">Вакансии</a></li>
-            <li><a href="#why">Почему мы</a></li>
-            <li><a href="#contacts">Контакты</a></li>
-          </ul>
+          <ul data-nav-target="primary"></ul>
         </nav>
         <div class="header-actions">
-          <a href="tel:+78123456789" class="phone">
+          <a class="phone" data-contact-link="phone">
             <i class="ri-phone-line"></i>
-            +7 (812) 345-67-89
+            <span data-contact-text="phone"></span>
           </a>
           <button class="btn btn-primary" data-mobile-popup-trigger>
             Заказать перевозку
@@ -44,15 +37,12 @@
           <i class="ri-close-line"></i>
         </button>
       </div>
-      <ul>
-        <li><a href="#home">Главная</a></li>
-        <li><a href="#services">Услуги</a></li>
-        <li><a href="#managers">Менеджеры</a></li>
-        <li><a href="#vacancies">Вакансии</a></li>
-        <li><a href="#why">Почему мы</a></li>
-        <li><a href="#contacts">Контакты</a></li>
-      </ul>
-      <a href="tel:+78123456789" class="mobile-nav-phone">+7 (812) 345-67-89</a>
+      <ul data-nav-target="mobile"></ul>
+      <a
+        class="mobile-nav-phone"
+        data-contact-link="phone"
+        data-contact-text="phone"
+      ></a>
     </nav>
 
     <section class="hero" id="home">
@@ -412,50 +402,38 @@
             <div class="contact-info">
               <div class="contact-block">
                 <div class="contact-label">Адрес</div>
-                <div class="contact-value">
-                  г. Сланцы, Переулок автомобилистов, д. 1
-                </div>
+                <div class="contact-value" data-contact-text="address"></div>
               </div>
               <div class="contact-block">
                 <div class="contact-label">Телефон</div>
                 <div class="contact-value">
-                  <a href="tel:+78123456789" class="popup-phone"
-                    >+7 (812) 345-67-89</a
-                  >
+                  <a
+                    class="popup-phone"
+                    data-contact-link="phone"
+                    data-contact-text="phone"
+                  ></a>
                 </div>
               </div>
               <div class="contact-block">
                 <div class="contact-label">Email</div>
                 <div class="contact-value">
-                  <a href="mailto:avtoslancy@mail.ru" class="popup-email"
-                    >avtoslancy@mail.ru</a
-                  >
+                  <a
+                    class="popup-email"
+                    data-contact-link="email"
+                    data-contact-text="email"
+                  ></a>
                 </div>
               </div>
               <div class="contact-block">
                 <div class="contact-label">Режим работы</div>
-                <div class="contact-value">
-                  Пн-Пт: 9:00-18:00, Сб-Вс: по запросу
-                </div>
+                <div class="contact-value" data-contact-text="schedule"></div>
               </div>
               <div class="contact-block">
                 <div class="contact-label">Мессенджеры</div>
-                <div class="messengers">
-                  <a
-                    href="https://t.me/slon_cargo"
-                    class="messenger-link"
-                    aria-label="Telegram"
-                  >
-                    <i class="ri-telegram-line"></i>
-                  </a>
-                  <a
-                    href="https://wa.me/78123456789"
-                    class="messenger-link"
-                    aria-label="WhatsApp"
-                  >
-                    <i class="ri-whatsapp-line"></i>
-                  </a>
-                </div>
+                <div
+                  class="messengers"
+                  data-contact-messengers="messenger-link"
+                ></div>
               </div>
             </div>
           </div>
@@ -487,22 +465,10 @@
           <p class="footer-desktop-description">
             Грузоперевозки по Санкт-Петербургу и Ленинградской области
           </p>
-          <div class="footer-desktop-social-links">
-            <a
-              href="https://t.me/slon_cargo"
-              class="footer-desktop-social-icon"
-              aria-label="Telegram"
-            >
-              <i class="ri-telegram-line"></i>
-            </a>
-            <a
-              href="https://wa.me/78123456789"
-              class="footer-desktop-social-icon"
-              aria-label="WhatsApp"
-            >
-              <i class="ri-whatsapp-line"></i>
-            </a>
-          </div>
+          <div
+            class="footer-desktop-social-links"
+            data-contact-messengers="footer-desktop-social-icon"
+          ></div>
         </div>
         <div class="footer-desktop-nav-columns">
           <div class="footer-desktop-nav-column">
@@ -548,26 +514,20 @@
       <div class="popup-content">
         <div class="popup-header-handle"></div>
         <h3 class="popup-title">Связаться со СЛОН</h3>
-        <a href="tel:+78123456789" class="popup-phone">+7 (812) 345-67-89</a>
-        <a href="mailto:avtoslancy@mail.ru" class="popup-email"
-          >avtoslancy@mail.ru</a
-        >
-        <div class="popup-social-links">
-          <a
-            href="https://t.me/slon_cargo"
-            class="popup-social-icon"
-            aria-label="Telegram"
-          >
-            <i class="ri-telegram-line"></i>
-          </a>
-          <a
-            href="https://wa.me/78123456789"
-            class="popup-social-icon"
-            aria-label="WhatsApp"
-          >
-            <i class="ri-whatsapp-line"></i>
-          </a>
-        </div>
+        <a
+          class="popup-phone"
+          data-contact-link="phone"
+          data-contact-text="phone"
+        ></a>
+        <a
+          class="popup-email"
+          data-contact-link="email"
+          data-contact-text="email"
+        ></a>
+        <div
+          class="popup-social-links"
+          data-contact-messengers="popup-social-icon"
+        ></div>
         <p class="popup-info">
           Время работы: Пн-Пт с 9:00 до 18:00
           <br />

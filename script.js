@@ -1,5 +1,110 @@
+const NAV_LINKS = [
+  { href: "#home", label: "Главная" },
+  { href: "#services", label: "Услуги" },
+  { href: "#managers", label: "Менеджеры" },
+  { href: "#vacancies", label: "Вакансии" },
+  { href: "#why", label: "Почему мы" },
+  { href: "#contacts", label: "Контакты" },
+];
+
+const COMPANY_CONTACT = {
+  phone: {
+    href: "tel:+78123456789",
+    text: "+7 (812) 345-67-89",
+  },
+  email: {
+    href: "mailto:avtoslancy@mail.ru",
+    text: "avtoslancy@mail.ru",
+  },
+  address: "г. Сланцы, Переулок автомобилистов, д. 1",
+  schedule: "Пн-Пт: 9:00-18:00, Сб-Вс: по запросу",
+  messengers: [
+    {
+      href: "https://t.me/slon_cargo",
+      icon: "ri-telegram-line",
+      label: "Telegram",
+    },
+    {
+      href: "https://wa.me/78123456789",
+      icon: "ri-whatsapp-line",
+      label: "WhatsApp",
+    },
+  ],
+};
+
+function renderNavigation() {
+  document.querySelectorAll("[data-nav-target]").forEach((list) => {
+    const isMobile = list.dataset.navTarget === "mobile";
+    const itemsMarkup = NAV_LINKS.map(({ href, label }) => {
+      const attributes = [`href="${href}"`];
+      if (isMobile) {
+        attributes.push("data-mobile-nav-link");
+      }
+      return `<li><a ${attributes.join(" ")}>${label}</a></li>`;
+    }).join("");
+
+    list.innerHTML = itemsMarkup;
+  });
+}
+
+function renderContacts() {
+  const { phone, email, address, schedule, messengers } = COMPANY_CONTACT;
+
+  document
+    .querySelectorAll("[data-contact-link='phone']")
+    .forEach((element) => {
+      element.setAttribute("href", phone.href);
+    });
+
+  document
+    .querySelectorAll("[data-contact-text='phone']")
+    .forEach((element) => {
+      element.textContent = phone.text;
+    });
+
+  document
+    .querySelectorAll("[data-contact-link='email']")
+    .forEach((element) => {
+      element.setAttribute("href", email.href);
+    });
+
+  document
+    .querySelectorAll("[data-contact-text='email']")
+    .forEach((element) => {
+      element.textContent = email.text;
+    });
+
+  document
+    .querySelectorAll("[data-contact-text='address']")
+    .forEach((element) => {
+      element.textContent = address;
+    });
+
+  document
+    .querySelectorAll("[data-contact-text='schedule']")
+    .forEach((element) => {
+      element.textContent = schedule;
+    });
+
+  document
+    .querySelectorAll("[data-contact-messengers]")
+    .forEach((container) => {
+      const linkClass = container.dataset.contactMessengers || "";
+      const classAttribute = linkClass ? ` class="${linkClass}"` : "";
+
+      container.innerHTML = messengers
+        .map(
+          ({ href, icon, label }) =>
+            `<a href="${href}"${classAttribute} aria-label="${label}"><i class="${icon}"></i></a>`
+        )
+        .join("");
+    });
+}
+
 // Оптимизированная функция инициализации
 function initApp() {
+  renderNavigation();
+  renderContacts();
   // Кэширование DOM элементов
   const elements = {
     mobileNav: document.getElementById("mobileNav"),
@@ -10,7 +115,7 @@ function initApp() {
     openPopupBtn: document.getElementById("open-popup-btn"),
     managersGrid: document.querySelector(".managers-grid"),
     paginationDots: document.getElementById("manager-pagination-dots"),
-    mobileNavLinks: document.querySelectorAll("#mobileNav ul li a"),
+    mobileNavLinks: document.querySelectorAll("[data-mobile-nav-link]"),
     popupTriggers: document.querySelectorAll("[data-mobile-popup-trigger]"),
     fadeElements: document.querySelectorAll(".scroll-fade-in"),
   };
