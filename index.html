@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>СЛОН - Грузоперевозки по всей России</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-container">
+        <div class="logo">СЛОН</div>
+        <nav>
+          <ul>
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#managers">Менеджеры</a></li>
+            <li><a href="#vacancies">Вакансии</a></li>
+            <li><a href="#why">Почему мы</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <a href="tel:+78123456789" class="phone">
+            <i class="ri-phone-line"></i>
+            +7 (812) 345-67-89
+          </a>
+          <button class="btn btn-primary" data-mobile-popup-trigger>
+            Заказать перевозку
+          </button>
+        </div>
+        <i class="ri-menu-line burger-menu"></i>
+      </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobileNav">
+      <div class="mobile-nav-header">
+        <div class="logo">СЛОН</div>
+        <button class="mobile-nav-close-btn">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+      <ul>
+        <li><a href="#home">Главная</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#managers">Менеджеры</a></li>
+        <li><a href="#vacancies">Вакансии</a></li>
+        <li><a href="#why">Почему мы</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+      <a href="tel:+78123456789" class="mobile-nav-phone">+7 (812) 345-67-89</a>
+    </nav>
+
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Грузоперевозки по всей России</h1>
+          <p class="hero-subtitle">
+            Надежная логистика для вашего бизнеса. Оперативная подача
+            транспорта, прозрачные тарифы и гарантия сохранности груза.
+          </p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary" data-mobile-popup-trigger>
+              Заказать перевозку
+            </button>
+            <button class="btn btn-secondary" data-mobile-popup-trigger>
+              Рассчитать стоимость
+            </button>
+          </div>
+          <div class="trust-bar">
+            <div class="trust-item">
+              <i class="ri-time-line"></i>
+              Работаем 24/7
+            </div>
+            <div class="trust-item">
+              <i class="ri-shield-check-line"></i>
+              Страхование груза
+            </div>
+            <div class="trust-item">
+              <i class="ri-truck-line"></i>
+              Подача от 2 часов
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="scroll-fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h2>Услуги</h2>
+          <p class="section-subtitle">
+            Предлагаем полный спектр логистических решений для бизнеса и частных
+            лиц
+          </p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="ri-truck-line"></i>
+            </div>
+            <h3 class="service-title">Городские перевозки</h3>
+            <p class="service-desc">
+              Доставка грузов по всей России в день обращения
+            </p>
+            <div class="service-tags">
+              <span class="tag">от 2 часов</span>
+              <span class="tag">до 10 тонн</span>
+            </div>
+            <a href="#" class="service-link" data-mobile-popup-trigger>
+              Подробнее
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="ri-road-map-line"></i>
+            </div>
+            <h3 class="service-title">Областные перевозки</h3>
+            <p class="service-desc">
+              Доставка по всей России с гарантией сроков
+            </p>
+            <div class="service-tags">
+              <span class="tag">от 4 часов</span>
+              <span class="tag">до 20 тонн</span>
+            </div>
+            <a href="#" class="service-link" data-mobile-popup-trigger>
+              Подробнее
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="ri-store-2-line"></i>
+            </div>
+            <h3 class="service-title">Доставка для ритейла</h3>
+            <p class="service-desc">
+              Специальные условия для магазинов и торговых сетей
+            </p>
+            <div class="service-tags">
+              <span class="tag">контракты</span>
+              <span class="tag">SLA 95%</span>
+            </div>
+            <a href="#" class="service-link" data-mobile-popup-trigger>
+              Подробнее
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="ri-box-3-line"></i>
+            </div>
+            <h3 class="service-title">Складская логистика</h3>
+            <p class="service-desc">
+              Хранение, обработка и комплектация заказов
+            </p>
+            <div class="service-tags">
+              <span class="tag">от 1 м²</span>
+              <span class="tag">ответхранение</span>
+            </div>
+            <a href="#" class="service-link" data-mobile-popup-trigger>
+              Подробнее
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="scroll-fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h2>Ключевые показатели</h2>
+          <p class="section-subtitle">Наша компания в цифрах</p>
+        </div>
+        <div class="kpi-grid">
+          <div class="kpi-item">
+            <div class="kpi-number">12</div>
+            <div class="kpi-label">Лет на рынке</div>
+          </div>
+          <div class="kpi-item">
+            <div class="kpi-number">15</div>
+            <div class="kpi-label">Грузовых авто</div>
+          </div>
+          <div class="kpi-item">
+            <div class="kpi-number">1200+</div>
+            <div class="kpi-label">Заявок/мес</div>
+          </div>
+          <div class="kpi-item">
+            <div class="kpi-number">97%</div>
+            <div class="kpi-label">SLA доставки</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="accent-section scroll-fade-in" id="managers">
+      <div class="container">
+        <div class="section-header">
+          <h2>Наши менеджеры</h2>
+          <p class="section-subtitle">
+            Профессиональная команда, готовая решить ваши логистические задачи
+          </p>
+        </div>
+        <div class="managers-grid">
+          <div class="manager-card">
+            <div class="manager-photo">
+              <i class="ri-user-3-line"></i>
+            </div>
+            <div class="manager-info">
+              <h3 class="manager-name">Стародубцева Анастасия</h3>
+              <div class="manager-role">Логист</div>
+              <div class="manager-contact">
+                <div class="contact-item">
+                  <i class="ri-phone-line"></i>
+                  +7 (812) 345-67-89
+                </div>
+                <div class="contact-item">
+                  <i class="ri-mail-line"></i>
+                  avtoslancy@mail.ru
+                </div>
+              </div>
+              <button
+                class="btn btn-primary"
+                data-mobile-popup-trigger
+                aria-label="Связаться с Анастасией Стародубцевой"
+              >
+                Связаться
+              </button>
+            </div>
+          </div>
+          <div class="manager-card">
+            <div class="manager-photo">
+              <i class="ri-user-3-line"></i>
+            </div>
+            <div class="manager-info">
+              <h3 class="manager-name">Куриленко Ирина</h3>
+              <div class="manager-role">Логист</div>
+              <div class="manager-contact">
+                <div class="contact-item">
+                  <i class="ri-phone-line"></i>
+                  +7 (812) 345-67-90
+                </div>
+                <div class="contact-item">
+                  <i class="ri-mail-line"></i>
+                  avtoslancy@mail.ru
+                </div>
+              </div>
+              <button
+                class="btn btn-primary"
+                data-mobile-popup-trigger
+                aria-label="Связаться с Ириной Куриленко"
+              >
+                Связаться
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="pagination-dots"
+          id="manager-pagination-dots"
+          aria-hidden="true"
+        >
+          <span class="dot active" aria-label="Слайд 1"></span>
+          <span class="dot" aria-label="Слайд 2"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="accent-section scroll-fade-in" id="vacancies">
+      <div class="container">
+        <div class="section-header">
+          <h2>Вакансии</h2>
+          <p class="section-subtitle">
+            Присоединяйтесь к нашей команде профессионалов
+          </p>
+        </div>
+        <div class="vacancies-grid">
+          <div class="vacancy-card">
+            <h3 class="vacancy-title">Водитель-экспедитор</h3>
+            <div class="vacancy-salary">от 120 000 до 300 000 ₽</div>
+            <div class="vacancy-requirements">
+              <div class="requirement-item">
+                <i class="ri-check-line"></i>
+                <div>Права категории C, E, опыт от 3 лет</div>
+              </div>
+              <div class="requirement-item">
+                <i class="ri-check-line"></i>
+                <div>Знание города и области</div>
+              </div>
+              <div class="requirement-item">
+                <i class="ri-check-line"></i>
+                <div>Ответственность, пунктуальность</div>
+              </div>
+              <div class="requirement-item">
+                <i class="ri-check-line"></i>
+                <div>Работа с документами и терминалами</div>
+              </div>
+            </div>
+            <div class="vacancy-meta">
+              <div class="meta-item">
+                <i class="ri-map-pin-line"></i>
+                По всей России
+              </div>
+              <div class="meta-item">
+                <i class="ri-time-line"></i>
+                График 5/2
+              </div>
+            </div>
+            <button class="btn btn-primary" data-mobile-popup-trigger>
+              Откликнуться
+            </button>
+          </div>
+          <div class="vacancy-card">
+            <h3 class="vacancy-title">Логист-диспетчер</h3>
+            <div class="vacancy-salary">от 80 000 до 300 000 ₽</div>
+            <div class="vacancy-requirements">
+              <div class="requirement-item">
+                <i class="ri-check-line"></i>
+                <div>Опыт работы от 1 года в логистике</div>
+              </div>
+              <div class="requirement-item">
+                <i class="ri-check-line"></i>
+                <div>Знание ПК, 1С, Excel</div>
+              </div>
+              <div class="requirement-item">
+                <i class="ri-check-line"></i>
+                <div>Умение работать с маршрутами</div>
+              </div>
+              <div class="requirement-item">
+                <i class="ri-check-line"></i>
+                <div>Стрессоустойчивость, многозадачность</div>
+              </div>
+            </div>
+            <div class="vacancy-meta">
+              <div class="meta-item">
+                <i class="ri-map-pin-line"></i>
+                По всей России
+              </div>
+              <div class="meta-item">
+                <i class="ri-time-line"></i>
+                График 2/2
+              </div>
+            </div>
+            <button class="btn btn-primary" data-mobile-popup-trigger>
+              Откликнуться
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why" class="scroll-fade-in">
+      <div class="container">
+        <div class="section-header">
+          <h2>Почему выбирают нас</h2>
+          <p class="section-subtitle">
+            Ключевые преимущества работы с компанией "СЛОН"
+          </p>
+        </div>
+        <div class="benefits-grid">
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="ri-time-line"></i>
+            </div>
+            <h3 class="benefit-title">Оперативность</h3>
+            <p class="benefit-desc">
+              Подача транспорта от 2 часов с момента заявки
+            </p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="ri-shield-check-line"></i>
+            </div>
+            <h3 class="benefit-title">Надежность</h3>
+            <p class="benefit-desc">
+              Страхование грузов и гарантия сохранности
+            </p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="ri-money-dollar-circle-line"></i>
+            </div>
+            <h3 class="benefit-title">Прозрачные цены</h3>
+            <p class="benefit-desc">
+              Фиксированные тарифы без скрытых платежей
+            </p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="ri-truck-line"></i>
+            </div>
+            <h3 class="benefit-title">Современный автопарк</h3>
+            <p class="benefit-desc">Регулярное обновление и техобслуживание</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="scroll-fade-in">
+      <div class="container">
+        <div class="contacts-container">
+          <div class="contact-content-wrapper">
+            <div class="section-header">
+              <h2>Контакты</h2>
+              <p class="section-subtitle">Свяжитесь с нами удобным способом</p>
+            </div>
+            <div class="contact-info">
+              <div class="contact-block">
+                <div class="contact-label">Адрес</div>
+                <div class="contact-value">
+                  г. Сланцы, Переулок автомобилистов, д. 1
+                </div>
+              </div>
+              <div class="contact-block">
+                <div class="contact-label">Телефон</div>
+                <div class="contact-value">
+                  <a href="tel:+78123456789" class="popup-phone"
+                    >+7 (812) 345-67-89</a
+                  >
+                </div>
+              </div>
+              <div class="contact-block">
+                <div class="contact-label">Email</div>
+                <div class="contact-value">
+                  <a href="mailto:avtoslancy@mail.ru" class="popup-email"
+                    >avtoslancy@mail.ru</a
+                  >
+                </div>
+              </div>
+              <div class="contact-block">
+                <div class="contact-label">Режим работы</div>
+                <div class="contact-value">
+                  Пн-Пт: 9:00-18:00, Сб-Вс: по запросу
+                </div>
+              </div>
+              <div class="contact-block">
+                <div class="contact-label">Мессенджеры</div>
+                <div class="messengers">
+                  <a
+                    href="https://t.me/slon_cargo"
+                    class="messenger-link"
+                    aria-label="Telegram"
+                  >
+                    <i class="ri-telegram-line"></i>
+                  </a>
+                  <a
+                    href="https://wa.me/78123456789"
+                    class="messenger-link"
+                    aria-label="WhatsApp"
+                  >
+                    <i class="ri-whatsapp-line"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="map-container">
+            <i class="ri-map-2-line" style="font-size: 48px"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-mobile-container">
+        <div class="footer-logo">СЛОН</div>
+        <div class="footer-mobile-nav">
+          <a href="#home">Главная</a>
+          <a href="#services">Услуги</a>
+          <a href="#contacts">Контакты</a>
+        </div>
+        <p class="footer-legal-mobile">
+          ООО "СЛОН" | ИНН: 7812345678 | ОГРН: 1234567890123
+          <br />
+          <a href="#">Политика конфиденциальности</a>
+          <br />
+        </p>
+      </div>
+      <div class="container footer-desktop-container">
+        <div class="footer-desktop-main">
+          <div class="footer-desktop-logo">СЛОН</div>
+          <p class="footer-desktop-description">
+            Грузоперевозки по Санкт-Петербургу и Ленинградской области
+          </p>
+          <div class="footer-desktop-social-links">
+            <a
+              href="https://t.me/slon_cargo"
+              class="footer-desktop-social-icon"
+              aria-label="Telegram"
+            >
+              <i class="ri-telegram-line"></i>
+            </a>
+            <a
+              href="https://wa.me/78123456789"
+              class="footer-desktop-social-icon"
+              aria-label="WhatsApp"
+            >
+              <i class="ri-whatsapp-line"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-desktop-nav-columns">
+          <div class="footer-desktop-nav-column">
+            <h4>Услуги</h4>
+            <ul>
+              <li><a href="#">Городские перевозки</a></li>
+              <li><a href="#">Областные перевозки</a></li>
+              <li><a href="#">Доставка для ритейла</a></li>
+              <li><a href="#">Складская логистика</a></li>
+            </ul>
+          </div>
+          <div class="footer-desktop-nav-column">
+            <h4>Компания</h4>
+            <ul>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Вакансии</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer-desktop-nav-column">
+            <h4>Информация</h4>
+            <ul>
+              <li><a href="#">Тарифы</a></li>
+              <li><a href="#">Документы</a></li>
+              <li><a href="#">Вопросы и ответы</a></li>
+              <li><a href="#">Блог</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-desktop-legal">
+          <p>ООО "СЛОН"</p>
+          <p>ИНН: 7810123456</p>
+          <p>ОГРН: 1157847123456</p>
+          <p><a href="#">Политика конфиденциальности</a></p>
+          <p>© 2025 СЛОН. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Unified Contact Popup -->
+    <div class="popup-overlay" id="contact-popup">
+      <div class="popup-content">
+        <div class="popup-header-handle"></div>
+        <h3 class="popup-title">Связаться со СЛОН</h3>
+        <a href="tel:+78123456789" class="popup-phone">+7 (812) 345-67-89</a>
+        <a href="mailto:avtoslancy@mail.ru" class="popup-email"
+          >avtoslancy@mail.ru</a
+        >
+        <div class="popup-social-links">
+          <a
+            href="https://t.me/slon_cargo"
+            class="popup-social-icon"
+            aria-label="Telegram"
+          >
+            <i class="ri-telegram-line"></i>
+          </a>
+          <a
+            href="https://wa.me/78123456789"
+            class="popup-social-icon"
+            aria-label="WhatsApp"
+          >
+            <i class="ri-whatsapp-line"></i>
+          </a>
+        </div>
+        <p class="popup-info">
+          Время работы: Пн-Пт с 9:00 до 18:00
+          <br />
+          Обработка заявок: 24/7
+          <br />
+          Среднее время ответа: 15 минут
+        </p>
+        <button class="close-popup-btn" id="close-popup-btn">Закрыть</button>
+      </div>
+    </div>
+
+    <!-- Fixed CTA Button for mobile -->
+    <button
+      class="fixed-cta-btn"
+      id="open-popup-btn"
+      data-mobile-popup-trigger
+      aria-label="Заказать перевозку"
+    >
+      Заказать перевозку
+      <i class="ri-arrow-right-line"></i>
+    </button>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
