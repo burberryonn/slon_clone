@@ -9,23 +9,18 @@ const NAV_LINKS = [
 
 const COMPANY_CONTACT = {
   phone: {
-    href: "tel:+78123456789",
-    text: "+7 (812) 345-67-89",
+    href: "tel:+79217817976",
+    text: "+7 (921) 781-79-76",
   },
   email: {
     href: "mailto:avtoslancy@mail.ru",
     text: "avtoslancy@mail.ru",
   },
-  address: "г. Сланцы, Переулок автомобилистов, д. 1",
+  address: "\u0433. \u0421\u043b\u0430\u043d\u0446\u044b, \u041f\u0435\u0440\u0435\u0443\u043b\u043e\u043a \u0430\u0432\u0442\u043e\u043c\u043e\u0431\u0438\u043b\u0438\u0441\u0442\u043e\u0432, \u0437\u0434. 1, \u0434. 33",
   schedule: "Пн-Пт: 9:00-18:00, Сб-Вс: по запросу",
   messengers: [
     {
-      href: "https://t.me/slon_cargo",
-      icon: "ri-telegram-line",
-      label: "Telegram",
-    },
-    {
-      href: "https://wa.me/78123456789",
+      href: "https://wa.me/79217817976",
       icon: "ri-whatsapp-line",
       label: "WhatsApp",
     },
@@ -95,7 +90,7 @@ function renderContacts() {
       container.innerHTML = messengers
         .map(
           ({ href, icon, label }) =>
-            `<a href="${href}"${classAttribute} aria-label="${label}"><i class="${icon}"></i></a>`
+            `<a href="${href}"${classAttribute} aria-label="${label}" target="_blank" rel="noopener noreferrer"><i class="${icon}"></i></a>`
         )
         .join("");
     });
